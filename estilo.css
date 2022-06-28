@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+
+@media (max-width: 576px) {
+
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-60px;
+	}
+
+	#btn-entidades{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-nossas-acoes{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-fale-conosco{
+		text-align: center;
+		display: block;
+	}
+
+
+	#apresentacao{
+		min-width:90%;
+	}
+
+	#apresentacao, p{
+		font-size: 20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:0%;
+		text-align: center;
+		padding:10px;
+		
+
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		width: 105%;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		heigh:2000px;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:22px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+	}
+
+	#header-conteudo{
+		position:relative;
+		left:7%;
+		top:50px;
+		white-space: nowrap;
+		text-align: center;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:7%;
+		max-width:300px;
+		font-size:20px;
+		background:silver;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:14px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:14px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:12px;
+	}
+
+
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (mix-width:991.99px{ ... }
+
+@media (min-width: 992px) and (max-width: 1119.99px) { ... }
+
+@media (min-width: 1200px) and (max-width: 1399.99px) { ... }
+
+@media (min-width: 1400px) { ... }
