@@ -1,0 +1,1217 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+@media(max-width: 379.99px) {
+
+	body{
+
+		min-height:4000px;
+		max-width:379px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#menu-hamburguer-down{
+		position:absolute;
+		left:85%;
+		top:120px;
+		font-size:36px;
+		border-radius:10%;
+		width:50px;
+		height:50px;
+		z-index:3;
+		background:#1b98e0;
+		color: white;
+	}
+
+	#menu-hamburguer-up{
+		position:absolute;
+		left:85%;
+		top:120px;
+		font-size:36px;
+		border-radius:10%;
+		width:50px;
+		height:50px;
+		z-index:3;
+		background:#1b98e0;
+		color: white;
+
+	}
+
+	#bars{
+		position: relative;
+		top:-37%;
+		left:-8px;
+	}
+
+	#nav-bar{
+		position:relative;
+		left:35%;
+		padding-left:0;
+		z-index:3;
+	}
+
+	
+
+	
+	#btn-entidades{
+		text-dark
+		text-align: center;
+		display: block;
+		/* From https://css.glass */
+background: rgba(27, 152, 224, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 152, 224, 0.3);
+		
+	}
+
+	#btn-convenios{
+		text-align: center;
+		display: block;
+		/* From https://css.glass */
+background: rgba(27, 152, 224, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 152, 224, 0.3);
+
+	}
+
+	#btn-nossas-acoes{
+		text-align: center;
+		display: block;
+		/* From https://css.glass */
+background: rgba(27, 152, 224, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 152, 224, 0.3);
+	}
+
+	#btn-fale-conosco{
+		text-align: center;
+		display: block;
+		/* From https://css.glass */
+background: rgba(27, 152, 224, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 152, 224, 0.3);
+
+	}
+
+
+	#avatar{
+		position:relative;
+		top:-180px;
+		z-index:1;
+	}
+
+	#btn-afiliacao{
+		position:relative;
+		top: -350px;
+		left: 50%;
+		background:#1b98e0;
+		color:white;
+	}
+
+	#btn-afiliacao: hover{
+
+	}
+
+
+	#apresentacao{
+		min-width:90%;
+	}
+
+	#apresentacao, p{
+		font-size: 20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:2%;
+		text-align: center;
+		padding:10px;
+		
+
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		width: 105%;
+		background:#fffafa;
+		position:relative;
+		top:-200px;
+		left:-5%;
+		height:2000px;
+		
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:22px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left: 3%;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+	}
+
+	#header-conteudo{
+		position:relative;
+		left:15%;
+		top:50px;
+		white-space: nowrap;
+		text-align: center;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:7%;
+		max-width:90%;
+		font-size:20px;
+		
+
+
+		/* From https://css.glass */
+background: rgba(27, 152, 224, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(27, 152, 224, 0.3);
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:70px;
+		font-size:14px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:14px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:12px;
+	}
+
+
+}
+
+
+
+
+
+@media(min-width:380px) and (max-width:575.99px) {
+
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-60px;
+	}
+
+	#btn-entidades{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-nossas-acoes{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-fale-conosco{
+		text-align: center;
+		display: block;
+	}
+
+
+	#apresentacao{
+		min-width:80%;
+
+	}
+
+	#apresentacao, p{
+		font-size: 20px;
+		position: relative;
+		left:-3%;
+		font-size:24px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:0%;
+		text-align: center;
+		padding:10px;
+		min-width:300px;
+		font-size:19px;
+		
+
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		width: 105%;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		heigh:2000px;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:22px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:-2%;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+	}
+
+	#header-conteudo{
+		position:relative;
+		left:10%;
+		top:50px;
+		white-space: nowrap;
+		text-align: center;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:3%;
+		max-width:300px;
+		font-size:20px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:14px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:16px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:16px;
+	}
+
+
+
+}
+
+
+@media (min-width:576px) and ( max-width:768px){
+
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-60px;
+	}
+
+	#btn-entidades{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-nossas-acoes{
+		text-align: center;
+		display: block;
+	}
+
+	#btn-fale-conosco{
+		text-align: center;
+		display: block;
+	}
+
+
+	#apresentacao{
+		max-width:90%;
+
+	}
+
+	#apresentacao, p{
+		position: relative;
+		left:3%;
+		font-size:20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:2%;
+		text-align: center;
+		padding:10px;
+		font-size:80%;
+		font-weight:bolder;
+		width:50%;
+	
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		max-width:100%;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		height:2000px;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:36px;
+		min-width:500px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:0%;
+		min-width:710px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+		position:relative;
+		left:0%;
+	}
+
+
+
+	#header-conteudo, h5{
+		position:relative;
+		left:5%;
+		top:20px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:40px;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:5%;
+		max-width:400px;
+		font-size:30px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:24px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:24px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:24px;
+	}
+
+
+}
+
+
+@media (min-width: 768.01px) and (max-width:1024px){
+
+
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-100px;
+		height: 50px;
+	}
+
+	#btn-entidades{
+		position: relative;
+		top:10px;
+		left:20%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-nossas-acoes{
+		position: relative;
+		top:10px;
+		left:30%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-fale-conosco{
+		position: relative;
+		top:10px;
+		left:40%;
+		text-align: center;
+		display:inline;
+	}
+
+
+	#apresentacao{
+		max-width:90%;
+
+	}
+
+	#apresentacao, p{
+		position: relative;
+		left:2%;
+		font-size:20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:0%;
+		text-align: center;
+		padding:10px;
+		font-size:95%;
+		font-weight:bolder;
+		width:50%;
+	
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		min-width: 800px;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		height:2000px;
+		margin: auto;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:36px;
+		min-width:500px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:0%;
+		max-width:1000px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+		position:relative;
+		left:0%;
+	}
+
+
+
+	#header-conteudo, h5{
+		position:relative;
+		left:5%;
+		top:20px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:44px;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:5%;
+		max-width:400px;
+		font-size:30px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:24px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:24px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:24px;
+	}
+
+
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1080px) {
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-100px;
+		height: 50px;
+	}
+
+	#btn-entidades{
+		position: relative;
+		top:10px;
+		left:20%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-nossas-acoes{
+		position: relative;
+		top:10px;
+		left:30%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-fale-conosco{
+		position: relative;
+		top:10px;
+		left:40%;
+		text-align: center;
+		display:inline;
+	}
+
+
+	#apresentacao{
+		max-width:90%;
+
+	}
+
+	#apresentacao, p{
+		position: relative;
+		left:2%;
+		font-size:20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:0%;
+		text-align: center;
+		padding:10px;
+		font-size:95%;
+		font-weight:bolder;
+		width:50%;
+	
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		min-width: 800px;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		height:2000px;
+		margin: auto;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:36px;
+		min-width:500px;
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:0%;
+		max-width:1000px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+		position:relative;
+		left:0%;
+	}
+
+
+
+	#header-conteudo, h5{
+		position:relative;
+		left:5%;
+		top:20px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:44px;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:5%;
+		max-width:400px;
+		font-size:30px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:24px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:24px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:24px;
+	}
+
+
+}
+
+@media (min-width: 1080px) and (max-width: 1399.99px) {
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-100px;
+		height: 50px;
+	}
+
+	#btn-entidades{
+		position: relative;
+		top:10px;
+		left:15%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-nossas-acoes{
+		position: relative;
+		top:10px;
+		left:35%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-fale-conosco{
+		position: relative;
+		top:10px;
+		left:60%;
+		text-align: center;
+		display:inline;
+	}
+
+
+	#apresentacao{
+		max-width:90%;
+
+	}
+
+	#apresentacao, p{
+		position: relative;
+		left:3%;
+		font-size:20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:5%;
+		text-align: center;
+		padding:10px;
+		font-size:120%;
+		font-weight:bolder;
+		width:80%;
+		margin-bottom:30px;
+	
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		min-width: 800px;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		height:2000px;
+		margin: auto;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:44px;
+		
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:0%;
+		max-width:1100px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+		position:relative;
+		left:0%;
+	}
+
+
+
+	#header-conteudo, h5{
+		position:relative;
+		left:10%;
+		top:20px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:50px;
+		margin:20px;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:5%;
+		max-width:400px;
+		font-size:30px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:24px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:24px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:24px;
+	}
+
+
+}
+
+@media (min-width: 1400px) {
+	body{
+
+		min-height:2500px;
+
+
+	}
+
+
+	#banner{
+		visibility: hidden;
+	}
+
+	#banner-mobile{
+		visibility: visible;
+	}
+
+	#nav-bar{
+		position:relative;
+		top:-100px;
+		height: 50px;
+	}
+
+	#btn-entidades{
+		position: relative;
+		top:10px;
+		left:15%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-nossas-acoes{
+		position: relative;
+		top:10px;
+		left:35%;
+		text-align: center;
+		display: inline;
+	}
+
+	#btn-fale-conosco{
+		position: relative;
+		top:10px;
+		left:60%;
+		text-align: center;
+		display:inline;
+	}
+
+
+	#apresentacao{
+		max-width:90%;
+
+	}
+
+	#apresentacao, p{
+		position: relative;
+		left:3%;
+		font-size:20px;
+	}
+	
+
+
+	#header-text-apresentacao{
+		position:relative;
+		left:5%;
+		text-align: center;
+		padding:10px;
+		font-size:120%;
+		font-weight:bolder;
+		width:80%;
+		margin-bottom:30px;
+	
+	}
+
+	main{
+		padding-bottom:50px;
+	}
+
+
+	.container{
+		min-width: 1400px;
+		background:#fffafa;
+		position:relative;
+		top:-50px;
+		height:2000px;
+		margin: auto;
+
+		
+	}
+
+
+
+	#header-carroussel{
+		position:relative;
+		left:0%;
+		top:0px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:44px;
+		
+	}
+
+	#carroussel{
+		position:relative;
+		top:0px;
+		left:0%;
+		max-width:1400px;
+
+	}
+
+	.carousel{
+		border: 1px solid white;
+		border-radius:100%;
+		position:relative;
+		left:0%;
+	}
+
+
+
+	#header-conteudo, h5{
+		position:relative;
+		left:10%;
+		top:20px;
+		white-space: nowrap;
+		text-align: center;
+		font-size:50px;
+		margin:20px;
+
+
+	}
+
+	.topico{
+		position: relative;
+		top:50px;
+		left:5%;
+		max-width:400px;
+		font-size:30px;
+		background:silver;
+		min-width:90%;
+
+		
+	}
+
+	footer{
+		position: relative;
+		top:80px;
+		font-size:24px;
+		text-align: center;
+
+
+	}
+
+	#whats-footer{
+		background-color:#34af23;
+		border-radius:100%;
+		font-size:24px;
+		color:white;
+	}
+
+	#whats-number{
+		font-size:24px;
+	}
+}
