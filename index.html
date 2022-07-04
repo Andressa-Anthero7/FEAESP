@@ -29,6 +29,10 @@
     		window.onload = function(){
     			document.getElementById("menu-hamburguer-up").style.visibility='hidden';
     			document.getElementById("nav-bar").style.visibility='hidden';
+    			document.getElementById("btn-afiliacao").style.visibility='visible';
+
+
+
 
     		}
 
@@ -51,6 +55,125 @@
     		}
 
     	
+
+
+
+
+        function formCnpj(){
+            document.getElementById('campos-cnpj').style.visibility='visible';
+            document.getElementById('campos-cnpj').style.position='relative';
+             document.getElementById('campos-cnpj').style.top='0px';
+            document.getElementById('campos-cpf').style.visibility='hidden';
+            document.getElementById('form-clientes-part-2').style.visibility='visible';
+            document.getElementById('form-clientes-part-2').style.position='relative';
+            document.getElementById('form-clientes-part-2').style.top='-490px';
+            document.getElementById('alert-tipo-juridico').style.visibility='hidden';
+            document.getElementById("form-afiliacao").style.height='2200px';
+            document.getElementById("email-info").style.position='relative';
+            document.getElementById("email-info").style.top='20px';
+
+        };
+
+        function formCpf(){
+             document.getElementById('campos-cnpj').style.visibility='hidden';
+            document.getElementById('campos-cpf').style.visibility='visible';
+            document.getElementById('campos-cpf').style.position='relative';
+             document.getElementById('campos-cpf').style.top='-400px';
+            document.getElementById('form-clientes-part-2').style.visibility='visible';
+            document.getElementById('form-clientes-part-2').style.position='relative';
+            document.getElementById('form-clientes-part-2').style.top='-450px';
+            document.getElementById('alert-tipo-juridico').style.visibility='hidden';
+            document.getElementById("form-afiliacao").style.height='2200px';
+            document.getElementById("email-info").style.position='relative';
+            document.getElementById("email-info").style.top='80px';
+
+
+        };
+
+        function formEscolha(){
+
+            var escolha = $('#id_tipo_juridico').val();
+            if( escolha == "CNPJ"){
+                    formCnpj()
+            }if( escolha == "CPF"){
+                formCpf()
+            }if( escolha != "CNPJ"  && escolha != "CPF") {
+                document.getElementById('alert-tipo-juridico').style.visibility='visible';
+                document.getElementById('campos-cnpj').style.visibility='hidden';
+                document.getElementById('campos-cpf').style.visibility='hidden';
+                document.getElementById('form-clientes-part-2').style.visibility='hidden';
+
+            }
+            };
+
+
+
+
+        $(document).ready(function() {
+
+            function limpa_formulário_cep() {
+                // Limpa valores do formulário de cep.
+                $("#rua").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+                $("#ibge").val("");
+            }
+
+            //Quando o campo cep perde o foco.
+            $("#cep").blur(function() {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = $(this).val().replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if(validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        $("#rua").val("...");
+                        $("#bairro").val("...");
+                        $("#cidade").val("...");
+                        $("#uf").val("...");
+                        $("#ibge").val("...");
+
+                        //Consulta o webservice viacep.com.br/
+                        $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+
+                            if (!("erro" in dados)) {
+                                //Atualiza os campos com os valores da consulta.
+                                $("#rua").val(dados.logradouro);
+                                $("#bairro").val(dados.bairro);
+                                $("#cidade").val(dados.localidade);
+                                $("#uf").val(dados.uf);
+                                $("#ibge").val(dados.ibge);
+                            } //end if.
+                            else {
+                                //CEP pesquisado não foi encontrado.
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            });
+        });
+
+    	
     </script>
 
 
@@ -64,19 +187,20 @@
 
 
 			<!-- BANNER -->
-			<img src="img/banner-3.png" class=" img img-fluid  mx-3 mt-1 col-12" id="banner">
+			<img src="img/banner-3.png" class=" img img-fluid p-5  col-12" id="banner">
 
 			<!--NAVEGACAO -->
-			<div id="menu-hamburguer-down" class="btn btn-lg " onclick="ShowMenu()"><i class="fa fa-chevron-circle-down" id="bars" aria-hidden="true"></i></div>
+			<div id="icon-menu">
+				     <div id="menu-hamburguer-down" class="btn btn-lg " onclick="ShowMenu()"><i class="fa fa-chevron-circle-down" id="bars" aria-hidden="true"></i></div>
 
-			<div id="menu-hamburguer-up" class="btn btn-lg " onclick="HiddenMenu()"><i class="fa fa-chevron-circle-up" id="bars" aria-hidden="true"></i></div>
-
+				    <div id="menu-hamburguer-up" class="btn btn-lg " onclick="HiddenMenu()"><i class="fa fa-chevron-circle-up" id="bars" aria-hidden="true"></i></div>
+			</div>
 
 			<div class="col-9" id="nav-bar">
-				<span id="btn-entidades" class="btn  m-1 ">Entidades e Associações</span>
-				<span id="btn-convenios" class="btn  m-1">Convênios</span>
-				<span id="btn-nossas-acoes" class="btn  m-1">Nossas Ações</span>
-				<span id="btn-fale-conosco" class="btn  m-1">Fale Conosco</span>
+				<span id="btn-entidades" class="btn  m-4 font-weight-bold">Entidades e Associações</span>
+				<span id="btn-convenios" class="btn  m-4 font-weight-bold">Convênios</span>
+				<span id="btn-nossas-acoes" class="btn  m-4 font-weight-bold">Nossas Ações</span>
+				<span id="btn-fale-conosco" class="btn  m-4 font-weight-bold">Fale Conosco</span>
 			</div>
 
 		</div>
@@ -85,29 +209,39 @@
 
 
 		<!-- Avatar -->
-		<div class="m-0 p-0">
-			 <img src="img/avatar-moca-4.png" class="img img-fluid" id="avatar">
-			 <span id="btn-afiliacao" class="btn btn-lg"><a class="text-white" href="afilia-se.html">Afilia-se</a></span>
+		<div class="m-0 p-0 " id="div-avatar">
+			 <img src="img/avatar-moca-4.png" class="img img-fluid " id="avatar">
+			 			 <img src="img/avatar-moca-11.png" class="img img-fluid " id="avatar-desktop">
+
+			 
 		</div>
 
-		<div class="container" id="container">
-
-				<div class="row p-2" id="apresentacao" >
-					<h5 id="header-text-apresentacao">A FEAESP - FEDERAÇÃO DA ENTIDADES E ASSOCIAÇÕES DO ESTADO DE SÃO PAULO</h5>
-					<p class=" m-3 text-dark col-12" >
-						 é uma entidade civil, sem fins lucrativos,criada para afiliar associados e buscar benefícios pelo ideal comum em projetos,convênios.programas municipais,estaduais e federais.<br>
-						
-					</p>
+		<a href="afilia-se.html" id="btn-afiliacao" class="btn btn-lg" >Afilia-se</a>
 
 
-					<p class=" m-3 text-dark col-12"  >
-						Fomentar o desenvolvimento das entidades e associações afiliadas.<br>
-						
-					</p>
+				<div class="col-12 p-2" id="apresentacao" >
 
-					<p class=" m-3 pb-4 text-dark col-12"  >
-						A <b>FEAESP</b> oferece aos afiliados apoio juridico, suporte, criação, desenvolvimento, cadastramento e acompanhamento de projetos, programas, convênios, municipais, estaduais e federais. Estimula, ampara e promove leis de incentivo junto aos poderes públicos, iniciativa privada e ao terceiro setor. 
-					</p>
+					
+							<div id="text-apresentacao">
+
+									<h6 id="header-apresentacao-1" class="mx-5" style="text-align: center;">A FEAESP</h6>
+					<h6 id="header-apresentacao-2" class="mx-1 col-12">FEDERAÇÃO DA ENTIDADES E ASSOCIAÇÕES DO ESTADO DE SÃO PAULO</h6>
+									<p class=" m-3 text-dark texto " >
+										 é uma entidade civil, sem fins lucrativos,criada para afiliar associados e buscar benefícios pelo ideal comum em projetos,convênios.programas municipais,estaduais e federais.<br>
+										
+									</p>
+
+
+									<p class=" m-3 text-dark  texto "  >
+										Fomentar o desenvolvimento das entidades e associações afiliadas.<br>
+										
+									</p>
+
+									<p class=" m-3 pb-4 text-dark texto  "  >
+										A <b>FEAESP</b> oferece aos afiliados apoio juridico, suporte, criação, desenvolvimento, cadastramento e acompanhamento de projetos, programas, convênios, municipais, estaduais e federais. Estimula, ampara e promove leis de incentivo junto aos poderes públicos, iniciativa privada e ao terceiro setor. 
+									</p>
+
+					   </div>
 				</div>
 
 				<!--CARROUSSEL -->
@@ -148,54 +282,55 @@
 					<!-- Conteudo Principal -->
 					<main class="row  p-0 " >
 						<div id="header-conteudo" class="text-dark">
-							<h5>CONVÊNIOS COM PREFEITURAS</h5>
+							<h6>CONVÊNIOS COM PREFEITURAS</h6>
 							
 							</div>
 
+						
+									<div class="text-justify topico p-3 card  text-dark">
+										1 - Criar e desenvolver projetos para as cidades que visam incitar o Turismo, a Cultura e a Assistencia Social;dirigidos aos mais necessitados e carentes na sua forma local, regional, estadual ou nacional
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							1 - Criar e desenvolver projetos para as cidades que visam incitar o Turismo, a Cultura e a Assistencia Social;dirigidos aos mais necessitados e carentes na sua forma local, regional, estadual ou nacional
-						</div>
+									<div class="text-justify topico p-3 card text-dark">
+										2 - Conduzir e manter projetos sociais e filantrópcos para idosos e crianças; abrir, administrar e apoiar casas de recuperação para dependentes (adictos) - remetendo aqui a qualquer produto alucinógeno(ácido lisérgico, mescalina e etc.) que leve a depedencia química e, por extensão, a qualquer uso de substância ou produto tóxico(tal como a fumo, alcool e etc.), por ser nocivo ou excessivo, sendo denominado como tal os entorpecentes;
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							2 - Conduzir e manter projetos sociais e filantrópcos para idosos e crianças; abrir, administrar e apoiar casas de recuperação para dependentes (adictos) - remetendo aqui a qualquer produto alucinógeno(ácido lisérgico, mescalina e etc.) que leve a depedencia química e, por extensão, a qualquer uso de substância ou produto tóxico(tal como a fumo, alcool e etc.), por ser nocivo ou excessivo, sendo denominado como tal os entorpecentes;
-						</div>
+									<div class="text-justify topico p-3 card  text-dark">
+										3 - Realizar cursos de capacitação técnica e profissional de vários segmentos do comércio, da industria e de serviços;palestras de conscientização sobre saúde na naturoterapia(terapias tradicionais complementares);projetos e convênios com terapeutas, visando as famílias na linha de desamparo e pobreza e ao be estar social, com foco nos menos favorecidos priorizando crianças adolescentes e idosos;
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							3 - Realizar cursos de capacitação técnica e profissional de vários segmentos do comércio, da industria e de serviços;palestras de conscientização sobre saúde na naturoterapia(terapias tradicionais complementares);projetos e convênios com terapeutas, visando as famílias na linha de desamparo e pobreza e ao be estar social, com foco nos menos favorecidos priorizando crianças adolescentes e idosos;
-						</div>
+									<div class="text-justify topico p-3 card  text-dark">
+										4 - Promover estudos, cursos , pesquisas, encontros, seminários, palestras, feiras, exposições e outros tipos de eventos em parceria com os municípios;
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							4 - Promover estudos, cursos , pesquisas, encontros, seminários, palestras, feiras, exposições e outros tipos de eventos em parceria com os municípios;
-						</div>
+									<div class="text-justify topico p-3 card  text-dark">
+										5 - Manter intercâmbio científico e ou cultural com instituições nacionais e internacionais;
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							5 - Manter intercâmbio científico e ou cultural com instituições nacionais e internacionais;
-						</div>
+									<div class="text-justify topico p-3 card  text-dark">
+										6 - Instituir e criar Rádios e TV´s, editar e distribuir jornais, guias turísticos, revistas produzir e veicular conteúdos para as emissoras de rádio e TV, websites, e afins das mais diversas mídias;
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							6 - Instituir e criar Rádios e TV´s, editar e distribuir jornais, guias turísticos, revistas produzir e veicular conteúdos para as emissoras de rádio e TV, websites, e afins das mais diversas mídias;
-						</div>
+									<div class="text-justify topico p-3 card text-dark">
+										7 - Apoiar e incentivar a Cultura e Turismo, com prioridade para as artes de uma maneira geral, tais como: músicas, artes cênicas e plásticas, o artesanato, as comidas típicas, a literatura, o cinema, a poesia, os artistas cantores e atores; quer sejam locais, regionais, estaduais, nacionais.
+									</div>
 
-						<div class="text-justify topico p-3 card my-3">
-							7 - Apoiar e incentivar a Cultura e Turismo, com prioridade para as artes de uma maneira geral, tais como: músicas, artes cênicas e plásticas, o artesanato, as comidas típicas, a literatura, o cinema, a poesia, os artistas cantores e atores; quer sejam locais, regionais, estaduais, nacionais.
-						</div>
-
-						<div class="text-justify topico p-3">
-							A AFEAESP - Federação das Entidades e Associações do Estado de São Paulo é uma instituição de carácter sócio-cultural-filantrópico que exerce ação fundamentada no respeito á dignidade da pessoa humana e no reconhecimento do direito inabalável que todos possuem da educação, do trabalho digno, da saúde. Nessa
-							missão de cunho social, racial, religioso, político, enfim, distintas por sua diversidades.
-						</div>
+									<div class="text-justify topico p-3 text-dark">
+										A AFEAESP - Federação das Entidades e Associações do Estado de São Paulo é uma instituição de carácter sócio-cultural-filantrópico que exerce ação fundamentada no respeito á dignidade da pessoa humana e no reconhecimento do direito inabalável que todos possuem da educação, do trabalho digno, da saúde. Nessa
+										missão de cunho social, racial, religioso, político, enfim, distintas por sua diversidades.
+									</div>
+						
 					
 					</main>
 
-						<footer class=" col-12">
+					
+
+
+			<footer class=" col-12">
 				<div>Desenvolvido por Antherus Desenvolvimento Web</div>
 				<i class="fa fa-whatsapp" id="whats-footer" aria-hidden="true"></i>
 				<span id="whats-number">(16) 99337-9492</span>
 			</footer>
-
-		</div>
-		<!-- Fim do Container -->
 
 		
 		

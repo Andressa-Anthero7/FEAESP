@@ -24,73 +24,33 @@
 
 
 
-   
+    <script type="text/javascript">
 
 
-</head>
+    	window.onload = function(){
+    		document.getElementById("campos-cnpj").style.visibility='hidden';
+    		document.getElementById("campos-cpf").style.visibility='hidden';
+    		document.getElementById("form-clientes-part-2").style.visibility='hidden';
 
-		<script type="text/javascript">
-					 window.onload = function(){
+    	}
 
-					 	document.getElementById("menu-hamburguer-up").style.visibility='hidden';
-    			document.getElementById("nav-bar").style.visibility='hidden';
-
-    			document.getElementById("menu-hamburguer-down").style.visibility='visible';
-    			document.getElementById("menu-hamburguer-down").style.position='relative';
-    			document.getElementById("menu-hamburguer-down").style.left='80%';
-    			document.getElementById("menu-hamburguer-down").style.top='-50px';
-
-           document.getElementById('campos-cnpj').style.visibility='hidden';
-           document.getElementById('campos-cpf').style.visibility='hidden';
-           document.getElementById('form-clientes-part-2').style.visibility='hidden';
-           document.getElementById('alert-tipo-juridico').style.visibility='visible';
-            document.getElementById('alert-tipo-juridico').style.position='relative';
-             document.getElementById('alert-tipo-juridico').style.top='0px';
-              document.getElementById('alert-tipo-juridico').style.left='0px';
-           document.getElementById("form-afiliacao").style.height='120px';
-           document.getElementById("form-afiliacao").style.position='relative';
-           document.getElementById("form-afiliacao").style.top='-150px';
-
-        }
+    		
 
 
-        function ShowMenu(){
-    			document.getElementById("menu-hamburguer-down").style.visibility='hidden';
-    			document.getElementById("menu-hamburguer-up").style.visibility='visible';
-    			document.getElementById("menu-hamburguer-up").style.position='relative';
-    			document.getElementById("menu-hamburguer-up").style.left='68%';
-    			document.getElementById("menu-hamburguer-up").style.top='-50px';
-    			document.getElementById("nav-bar").style.visibility='visible';
-    			document.getElementById("btn-afiliacao").style.visibility='hidden';
 
-    		};
-
-
-    		function HiddenMenu(){
-    			
-    			document.getElementById("menu-hamburguer-down").style.visibility='visible';
-    			document.getElementById("menu-hamburguer-down").style.position='relative';
-    			document.getElementById("menu-hamburguer-down").style.left='80%';
-    			document.getElementById("menu-hamburguer-down").style.top='-50px';
-
-    			document.getElementById("menu-hamburguer-up").style.visibility='hidden';
-    			document.getElementById("nav-bar").style.visibility='hidden';
-    			document.getElementById("btn-afiliacao").style.visibility='visible';
-
-    		};
-
+    		
         function formCnpj(){
             document.getElementById('campos-cnpj').style.visibility='visible';
             document.getElementById('campos-cnpj').style.position='relative';
-             document.getElementById('campos-cnpj').style.top='-50px';
+             document.getElementById('campos-cnpj').style.top='0px';
             document.getElementById('campos-cpf').style.visibility='hidden';
             document.getElementById('form-clientes-part-2').style.visibility='visible';
             document.getElementById('form-clientes-part-2').style.position='relative';
-            document.getElementById('form-clientes-part-2').style.top='-300px';
+            document.getElementById('form-clientes-part-2').style.top='-240px';
             document.getElementById('alert-tipo-juridico').style.visibility='hidden';
-            document.getElementById("form-afiliacao").style.height='1100px';
+            document.getElementById("form-afiliacao").style.height='2200px';
             document.getElementById("email-info").style.position='relative';
-            document.getElementById("email-info").style.top='0px';
+            document.getElementById("email-info").style.top='0';
 
         };
 
@@ -101,9 +61,11 @@
              document.getElementById('campos-cpf').style.top='-250px';
             document.getElementById('form-clientes-part-2').style.visibility='visible';
             document.getElementById('form-clientes-part-2').style.position='relative';
-            document.getElementById('form-clientes-part-2').style.top='-250px';
+            document.getElementById('form-clientes-part-2').style.top='-200px';
             document.getElementById('alert-tipo-juridico').style.visibility='hidden';
-            document.getElementById("form-afiliacao").style.height='1200px';
+            document.getElementById("form-afiliacao").style.height='2200px';
+            document.getElementById("email-info").style.position='relative';
+            document.getElementById("email-info").style.top='0';
 
 
         };
@@ -191,61 +153,54 @@
             });
         });
 
+    	
+    </script>
 
-		</script>
 
+</head>
 <body>
-	<head>
-		<div class="row">
-		
+
+
+
 			<!--BANNER-MOBILE-->
 			<img src="img/banner-mobile-3.png" class=" img img-fluid  m-3  col-12" id="banner-mobile">
 
 
 			<!-- BANNER -->
-			<img src="img/banner-3.png" class=" img img-fluid  mx-3 mt-1 col-12" id="banner">
-
-			<!--NAVEGACAO -->
-			<div id="menu-hamburguer-down" class="btn btn-lg " onclick="ShowMenu()"><i class="fa fa-chevron-circle-down" id="bars" aria-hidden="true"></i></div>
-
-			<div id="menu-hamburguer-up" class="btn btn-lg " onclick="HiddenMenu()"><i class="fa fa-chevron-circle-up" id="bars" aria-hidden="true"></i></div>
+			<img src="img/banner-3.png" class=" img img-fluid p-5  col-12" id="banner">
 
 
-			<div class="col-9" id="nav-bar">
-				<span id="btn-entidades" class="btn  m-4 ">Entidades e Associações</span>
-				<span id="btn-convenios" class="btn  m-4">Convênios</span>
-				<span id="btn-nossas-acoes" class="btn  m-4">Nossas Ações</span>
-				<span id="btn-fale-conosco" class="btn  m-4">Fale Conosco</span>
-			</div>
 
-		</div>
-		
-	</head>
+			<!--BANNER-MOBILE-->
+			<img src="img/avatar-formulario.png" class=" img img-fluid  m-3  col-12" id="avatar-formulario">
+
+	
 
 
-		<!-- Avatar -->
-		<div class="m-0 p-0">
-			 <img src="img/avatar-formulario.png" class="img img-fluid" id="avatar">
-		</div>
+	
 
-
+			
 					<!-- Conteudo Formulário -->
-					<main class="row  p-0 " >
+					<main class="col-12  p-0 " >
 
-						<form method="POST" class=" border rounded border-dark   col-10 m-auto  " id="form-afiliacao"  enctype="multipart/form-data" action =""  >
+
+						<form method="POST"   id="form-afiliacao"  enctype="multipart/form-data" action =""  >
                 {% csrf_token %}
+
+                						<h4 class="p-3  mt-4" id="header-afiliacao">Formulário de Afiliação</h4>
+
 
 
                 <div class="p-2">
                        <label for="id_tipo_juridico">Tipo juridico:</label>
-    					<select name="tipo_juridico" required id="id_tipo_juridico" onchange="formEscolha()">
+    					<select name="tipo_juridico" required id="id_tipo_juridico" class="col-12 " onchange="formEscolha()">
                             <option value="" selected>Escolha CNPJ ou CPF</option>
                             <option value="CNPJ">CNPJ</option>
                             <option value="CPF">CPF</option>
                            
 					    </select>
                 </div>
-                <span id="alert-tipo-juridico" class="bg-danger border rounded p-1 text-white bold mb-0 pb-0" style="position:relative;left:300px;top:-40px;"><i class="fa fa-exclamation-triangle p-2 " style="color:yellow;" aria-hidden="true"></i>Selecione primeiro CNPJ ou CPF</span>
+                <div id="alert-tipo-juridico" class="bg-danger border rounded p-1 text-white bold mb-0 pb-0"><i class="fa fa-exclamation-triangle p-2 " style="color:yellow;" aria-hidden="true"></i>Selecione primeiro CNPJ ou CPF</div>
                 <hr class="m-0 p-0" style="position:relative;top:-30px;">
                 <!-- Campos nome e cnpj da empresa -->
 
@@ -312,7 +267,7 @@
 
                                 
                         <!-- ENDERECO -->
-                        <div class="border rounded border-dark pl-1 mt-5">
+                        <div class=" pl-1 mt-5" id="endereco">
                                   <h6 class="my-2 p-3">Telefone/WhatsApp</h6>
                                   <div>
                                       <label for="id_telefone">Telefone:</label>
@@ -357,9 +312,10 @@
 
 
 
-                <div class="mt-5">
-                    <input type="submit" id="salvar-form-cliente" name="form-cliente" value="Enviar" style="position:relative;left:30%;top:-20px;" class="btn btn-lg bg-warning">
+                <div class="m-5">
+                    <button type="submit" id="salvar-form-afiliacao" name="form-afiliacao"  style="position:relative;left:20%;top:0px;" class="btn btn-lg bg-warning">Salvar</button>
                 </div>
+                <div class="m-5 p-5 "></div>
 
       </form>
 
@@ -371,14 +327,15 @@
 					
 					</main>
 
-						<footer class=" col-12" id="footer">
+
+					
+
+
+			<footer class=" col-12">
 				<div>Desenvolvido por Antherus Desenvolvimento Web</div>
 				<i class="fa fa-whatsapp" id="whats-footer" aria-hidden="true"></i>
 				<span id="whats-number">(16) 99337-9492</span>
 			</footer>
-
-		</div>
-		<!-- Fim do Container -->
 
 		
 		
