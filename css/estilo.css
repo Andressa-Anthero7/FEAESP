@@ -1127,12 +1127,12 @@
 }
 
 
-@media (min-width: 769.01px) and (max-width:1024.99px){
+@media (min-width: 769.01px) and (max-width:1079.99px){
 
-					body{
+	                    body{
 
 							min-height:4000px;
-							min-width:320px;
+							max-width:400px;
 
 
 						}
@@ -1141,21 +1141,30 @@
 						#banner{
 							visibility: visible;
 							position: absolute;
-							top:-5%;
+							top:-7%;
+							border: 1px dotted black;
+							padding:0;
+							margin-bottom:0;
+							max-width:80%;
+							left:20%;
+
+
+
 						}
 
 						#banner-mobile{
 							visibility: hidden;
 							position: relative;
-							left:-5%;
-							max-width:1080px;
-							border: 1px solid yellow;
+							left:50%;
+							max-width:780px;
+							border: 1px solid red;
+							display:inline;
 						}
 
 						#menu-hamburguer-down{
 							position:absolute;
-							left:5%;
-							top:150px;
+							left:90%;
+							top:100px;
 							font-size:36px;
 							border-radius:10%;
 							width:50px;
@@ -1163,12 +1172,13 @@
 							z-index:3;
 							background:#1b98e0;
 							color: white;
+
 						}
 
 						#menu-hamburguer-up{
 							position:absolute;
-							left:5%;
-							top:150px;
+							left:90%;
+							top:100px;
 							font-size:36px;
 							border-radius:10%;
 							width:50px;
@@ -1176,6 +1186,7 @@
 							z-index:3;
 							background:#1b98e0;
 							color: white;
+
 
 						}
 
@@ -1188,25 +1199,25 @@
 						#nav-bar{
 							position:relative;
 							left:50%;
-							top:-160px;
+							top:20px;
 							padding-left:0;
 							z-index:3;
-							max-width:80%;
+							min-width:750px;
 							font-size:30px;
+                            border: 1px solid red;
 						}
 
 
-						#avatar-desktop{
-							visibility:hidden;
-						}
 
-						
 
-						
+
+
+
+
 						#btn-entidades{
 							text-dark
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 							background: rgba(27, 152, 224, 0.28);
 							border-radius: 16px;
@@ -1214,15 +1225,17 @@
 							backdrop-filter: blur(5px);
 							-webkit-backdrop-filter: blur(5px);
 							border: 1px solid rgba(27, 152, 224, 0.3);
-							font-size:18px;
+							font-size:14px;
 							text-align:left;
-							padding: 20px;
-							
+							padding: 10px;
+
+							display:inline;
+
 						}
 
 						#btn-convenios{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1230,15 +1243,17 @@
 					backdrop-filter: blur(5px);
 					-webkit-backdrop-filter: blur(5px);
 					border: 1px solid rgba(27, 152, 224, 0.3);
-					font-size:18px;
+					font-size:14px;
 						text-align:left;
-						padding: 20px;
+						padding: 10px;
+
+                        display:inline;
 
 						}
 
 						#btn-nossas-acoes{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1246,14 +1261,21 @@
 					backdrop-filter: blur(5px);
 					-webkit-backdrop-filter: blur(5px);
 					border: 1px solid rgba(27, 152, 224, 0.3);
-					font-size:18px;
+					font-size:14px;
 						text-align:left;
-						padding: 20px;
-						}
+						padding: 10px;
+
+						display:inline;
+
+
+
+
+
+					}
 
 						#btn-fale-conosco{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1261,23 +1283,35 @@
 					backdrop-filter: blur(5px);
 					-webkit-backdrop-filter: blur(5px);
 					border: 1px solid rgba(27, 152, 224, 0.3);
-					font-size:18px;
+					font-size:14px;
 						text-align:left;
-						padding: 20px;
+						padding: 10px;
+
+                        display:inline;
+
 
 						}
 
 
 						#avatar{
+							visibility: hidden;
+
+						}
+
+						#avatar-2{
+						    visibility: visible;
 							position:relative;
 							top:-450px;
 							z-index:1;
-							min-width:300px;
+							min-width:1080px;
 						}
+
+
+
 						#btn-afiliacao{
 							position:absolute;
-							top:350px;
-							left:50%;
+							top:330px;
+							left:600px;
 							background:#1b98e0;
 							color:white;
 							width:200px;
@@ -1287,25 +1321,29 @@
 
 						.texto{
 							position: relative;
-							left:5%;
-							max-width:80%;
+							left:2%;
+							max-width:85%;
+							top:-20px;
 						}
 
-						
+
 
 
 						#apresentacao{
-							min-width:50%;
+							max-width:700px;
 							position: relative;
-							top:-900px;
+							top:-450px;
 							left:5%;
+							border:  1px solid black;
+							border-radius:10%;
+							display:flex;
 						}
 
 
 
 						#header-apresentacao-1{
 							position: relative;
-							left:-10%;
+							left:-15%;
 							white-space: nowrap;
 							min-width:100%;
 							font-size:40px;
@@ -1314,23 +1352,29 @@
 						#header-apresentacao-2{
 							position: relative;
 							left:0%;
-							white-space: nowrap;
-							min-width:40%;
+							min-width:45%;
 							margin-bottom:50px;
-							font-size:26px;
+							font-size:16px;
 						}
 
-						
-
-						
-
-						
 
 
-						
+
+
+
+
+
+
+
+
 
 						main{
-							padding-bottom:50px;
+
+							position:absolute;
+							top: 1350px;
+							left: 0%;
+							max-width:50%;
+
 						}
 
 
@@ -1341,27 +1385,28 @@
 							top:-200px;
 							left:-5%;
 							height:2000px;
-							
 
-							
+
+
 						}
 
 
 
 						#header-carroussel{
 							position:relative;
-							left:0%;
-							top:0px;
+							left:50%;
+							top:-30px;
 							white-space: nowrap;
 							text-align: center;
 							font-size:20px;
 						}
 
 						#carroussel{
-							position:relative;
-							top:-850px;
-							left: 0%;
-							min-width:320px;
+							position:absolute;
+							top:650px;
+							left:200px;
+						    min-width:700px;
+							display:flex;
 
 						}
 
@@ -1371,11 +1416,12 @@
 						}
 
 						#header-conteudo{
-							position:relative;
-							left:20%;
-							top:-780px;
+							position:absolute;
+							left:60%;
+							top:0px;
 							white-space: nowrap;
 							text-align: center;
+
 
 						}
 
@@ -1386,9 +1432,9 @@
 
 						.topico{
 							position: relative;
-							top:-750px;
-							left:5%;
-							max-width:900px;
+							top:100px;
+							left:20%;
+							min-width:1080px;
 							font-size:20px;
 							margin-bottom: 50px;
 
@@ -1400,7 +1446,7 @@
 							-webkit-backdrop-filter: blur(5px);
 							border: 1px solid rgba(27, 152, 224, 0.3);
 
-							
+
 						}
 
 						footer{
@@ -1425,46 +1471,50 @@
 						}
 
 
+
+
 }
 
 
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1080px) and (max-width: 1440px) {
 
-	body{
+	                    body{
 
 							min-height:4000px;
-							max-width:1080px;
+							max-width:400px;
 
 
 						}
 
 
 						#banner{
-							visibility: hidden;
+							visibility: visible;
 							position: absolute;
-							top:-7%;
+							top:-5%;
 							border: 1px solid black;
 							padding:0;
 							margin-bottom:0;
+							max-width:80%;
+							left:20%;
 
 
 
 						}
 
 						#banner-mobile{
-							visibility: visible;
+							visibility: hidden;
 							position: relative;
 							left:50%;
 							max-width:780px;
-							border: 1px solid yellow;
+							border: 1px solid red;
 							display:inline;
 						}
 
 						#menu-hamburguer-down{
 							position:absolute;
-							left:100%;
-							top:220px;
+							right:50px;
+							top:200px;
 							font-size:36px;
 							border-radius:10%;
 							width:50px;
@@ -1477,8 +1527,8 @@
 
 						#menu-hamburguer-up{
 							position:absolute;
-							left:100%;
-							top:220px;
+							right:50px;
+							top:200px;
 							font-size:36px;
 							border-radius:10%;
 							width:50px;
@@ -1486,6 +1536,7 @@
 							z-index:3;
 							background:#1b98e0;
 							color: white;
+
 
 						}
 
@@ -1497,18 +1548,18 @@
 
 						#nav-bar{
 							position:relative;
-							left:50%;
-							top:50px;
+							left:60%;
+							top:70px;
 							padding-left:0;
 							z-index:3;
-							max-width:80%;
+							min-width:850px;
 							font-size:30px;
+                            border: 1px solid red;
 						}
 
 
-						#avatar-desktop{
-							visibility:hidden;
-						}
+
+
 
 						
 
@@ -1516,7 +1567,7 @@
 						#btn-entidades{
 							text-dark
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 							background: rgba(27, 152, 224, 0.28);
 							border-radius: 16px;
@@ -1526,13 +1577,15 @@
 							border: 1px solid rgba(27, 152, 224, 0.3);
 							font-size:18px;
 							text-align:left;
-							padding: 20px;
+							padding: 10px;
+
+							display:inline;
 							
 						}
 
 						#btn-convenios{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1542,13 +1595,15 @@
 					border: 1px solid rgba(27, 152, 224, 0.3);
 					font-size:18px;
 						text-align:left;
-						padding: 20px;
+						padding: 10px;
+
+                        display:inline;
 
 						}
 
 						#btn-nossas-acoes{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1558,12 +1613,19 @@
 					border: 1px solid rgba(27, 152, 224, 0.3);
 					font-size:18px;
 						text-align:left;
-						padding: 20px;
-						}
+						padding: 10px;
+
+						display:inline;
+
+
+
+
+
+					}
 
 						#btn-fale-conosco{
 							text-align: center;
-							display: block;
+
 							/* From https://css.glass */
 					background: rgba(27, 152, 224, 0.28);
 					border-radius: 16px;
@@ -1573,21 +1635,35 @@
 					border: 1px solid rgba(27, 152, 224, 0.3);
 					font-size:18px;
 						text-align:left;
-						padding: 20px;
+						padding: 10px;
+
+                        display:inline;
+
 
 						}
 
 
 						#avatar{
-							position:relative;
-							top:-600px;
-							z-index:1;
-							min-width:1400px;
+							visibility: hidden;
+
 						}
+
+						#avatar-2{
+						    visibility: visible;
+							position:absolute;
+							top:100px;
+							left:0;
+							z-index:1;
+							min-width:1300px;
+
+						}
+
+
+
 						#btn-afiliacao{
 							position:absolute;
-							top:350px;
-							left:60%;
+							top:420px;
+							left:720px;
 							background:#1b98e0;
 							color:white;
 							width:200px;
@@ -1597,26 +1673,29 @@
 
 						.texto{
 							position: relative;
-							left:15%;
-							max-width:70%;
+							left:2%;
+							max-width:85%;
+							top:-20px;
 						}
 
 						
 
 
 						#apresentacao{
-							max-width:50%;
+							max-width:700px;
 							position: relative;
-							top:-1000px;
+							top:220px;
 							left:5%;
-							border:  1px solid red;
+							border:  1px solid black;
+							border-radius:10%;
+							display:flex;
 						}
 
 
 
 						#header-apresentacao-1{
 							position: relative;
-							left:-5%;
+							left:-15%;
 							white-space: nowrap;
 							min-width:100%;
 							font-size:40px;
@@ -1624,10 +1703,10 @@
 
 						#header-apresentacao-2{
 							position: relative;
-							left:10%;
-							min-width:40%;
+							left:0%;
+							min-width:45%;
 							margin-bottom:50px;
-							font-size:26px;
+							font-size:16px;
 						}
 
 
@@ -1643,9 +1722,9 @@
 
 						main{
 
-							position: relative;
-							top: -780px;
-							left: 60%;
+							position:absolute;
+							top: 1450px;
+							left: 0%;
 							max-width:50%;
 							
 						}
@@ -1667,18 +1746,19 @@
 
 						#header-carroussel{
 							position:relative;
-							left:0%;
-							top:0px;
+							left:50%;
+							top:-50px;
 							white-space: nowrap;
 							text-align: center;
 							font-size:20px;
 						}
 
 						#carroussel{
-							position:relative;
-							top:-1620px;
-							left: 60%;
-							max-width:50%;
+							position:absolute;
+							top:780px;
+							left:200px;
+						    min-width:700px;
+							display:flex;
 
 						}
 
@@ -1688,11 +1768,12 @@
 						}
 
 						#header-conteudo{
-							position:relative;
-							left:0%;
-							top:-780px;
+							position:absolute;
+							left:60%;
+							top:0px;
 							white-space: nowrap;
 							text-align: center;
+
 
 						}
 
@@ -1703,9 +1784,9 @@
 
 						.topico{
 							position: relative;
-							top:-750px;
-							left:5%;
-							max-width:900px;
+							top:100px;
+							left:20%;
+							min-width:1080px;
 							font-size:20px;
 							margin-bottom: 50px;
 
@@ -1722,10 +1803,373 @@
 
 						footer{
 							position: absolute;
-							top:2200px;
-							left:0%;
+							top:3500px;
+							left:480px;
 							font-size:14px;
 							text-align: center;
+							width:1400px;
+
+
+						}
+
+						#whats-footer{
+							background-color:#34af23;
+							border-radius:100%;
+							font-size:14px;
+							color:white;
+						}
+
+						#whats-number{
+							font-size:12px;
+						}
+
+
+
+}
+
+@media (min-width: 1440.99px) {
+
+
+	                    body{
+
+							min-height:4000px;
+							max-width:400px;
+
+
+						}
+
+
+						#banner{
+							visibility: visible;
+							position: absolute;
+							top:-5%;
+							border: 1px solid black;
+							padding:0;
+							margin-bottom:0;
+							max-width:80%;
+							left:10%;
+
+
+
+						}
+
+						#banner-mobile{
+							visibility: hidden;
+							position: relative;
+							left:50%;
+							max-width:780px;
+							border: 1px solid red;
+							display:inline;
+						}
+
+						#menu-hamburguer-down{
+							position:absolute;
+							right:50px;
+							top:200px;
+							font-size:36px;
+							border-radius:10%;
+							width:50px;
+							height:50px;
+							z-index:3;
+							background:#1b98e0;
+							color: white;
+
+						}
+
+						#menu-hamburguer-up{
+							position:absolute;
+							right:50px;
+							top:200px;
+							font-size:36px;
+							border-radius:10%;
+							width:50px;
+							height:50px;
+							z-index:3;
+							background:#1b98e0;
+							color: white;
+
+
+						}
+
+						#bars{
+							position: relative;
+							top:-37%;
+							left:-8px;
+						}
+
+						#nav-bar{
+							position:relative;
+							left:60%;
+							top:70px;
+							padding-left:0;
+							z-index:3;
+							min-width:850px;
+							font-size:30px;
+                            border: 1px solid red;
+						}
+
+
+
+
+
+
+
+
+						#btn-entidades{
+							text-dark
+							text-align: center;
+
+							/* From https://css.glass */
+							background: rgba(27, 152, 224, 0.28);
+							border-radius: 16px;
+							box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+							backdrop-filter: blur(5px);
+							-webkit-backdrop-filter: blur(5px);
+							border: 1px solid rgba(27, 152, 224, 0.3);
+							font-size:18px;
+							text-align:left;
+							padding: 10px;
+
+							display:inline;
+
+						}
+
+						#btn-convenios{
+							text-align: center;
+
+							/* From https://css.glass */
+					background: rgba(27, 152, 224, 0.28);
+					border-radius: 16px;
+					box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+					backdrop-filter: blur(5px);
+					-webkit-backdrop-filter: blur(5px);
+					border: 1px solid rgba(27, 152, 224, 0.3);
+					font-size:18px;
+						text-align:left;
+						padding: 10px;
+
+                        display:inline;
+
+						}
+
+						#btn-nossas-acoes{
+							text-align: center;
+
+							/* From https://css.glass */
+					background: rgba(27, 152, 224, 0.28);
+					border-radius: 16px;
+					box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+					backdrop-filter: blur(5px);
+					-webkit-backdrop-filter: blur(5px);
+					border: 1px solid rgba(27, 152, 224, 0.3);
+					font-size:18px;
+						text-align:left;
+						padding: 10px;
+
+						display:inline;
+
+
+
+
+
+					}
+
+						#btn-fale-conosco{
+							text-align: center;
+
+							/* From https://css.glass */
+					background: rgba(27, 152, 224, 0.28);
+					border-radius: 16px;
+					box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+					backdrop-filter: blur(5px);
+					-webkit-backdrop-filter: blur(5px);
+					border: 1px solid rgba(27, 152, 224, 0.3);
+					font-size:18px;
+						text-align:left;
+						padding: 10px;
+
+                        display:inline;
+
+
+						}
+
+
+						#avatar{
+							visibility: hidden;
+
+						}
+
+						#avatar-2{
+						    visibility: visible;
+							position:absolute;
+							top:70px;
+							left:0;
+							z-index:1;
+							min-width:2500px;
+
+						}
+
+
+
+						#btn-afiliacao{
+							position:absolute;
+							top:670px;
+							left:1380px;
+							background:#1b98e0;
+							color:white;
+							width:500px;
+							font-size:60px;
+							z-index:3;
+						}
+
+						.texto{
+							position: relative;
+							left:5%;
+							max-width:85%;
+							top:100px;
+							font-size:40px;
+						}
+
+
+
+
+						#apresentacao{
+							min-width:1050px;
+							position: relative;
+							top:700px;
+							left:5%;
+							border:  1px solid black;
+							border-radius:10%;
+							display:flex;
+							padding:20px;
+							height:1200px
+						}
+
+
+
+						#header-apresentacao-1{
+							position: relative;
+							left:-5%;
+							top:30px;
+							white-space: nowrap;
+							min-width:100%;
+							font-size:60px;
+						}
+
+						#header-apresentacao-2{
+							position: relative;
+							left:0%;
+							top:70px;
+							min-width:100%;
+							margin-bottom:50px;
+							font-size:30px;
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+						main{
+
+							position:absolute;
+							top: 2500px;
+							left: 0%;
+							max-width:50%;
+
+						}
+
+
+						.container{
+							width: 100%;
+							background:#fffafa;
+							position:relative;
+							top:-200px;
+							left:-5%;
+							height:2000px;
+
+
+
+						}
+
+
+
+						#header-carroussel{
+							position:relative;
+							left:900px;
+							top:-100px;
+							white-space: nowrap;
+							text-align: center;
+							font-size:40px;
+						}
+
+						#carroussel{
+							position:absolute;
+							top:1400px;
+							left:550px;
+						    min-width:1800px;
+							display:flex;
+							border-radius:10%;
+
+						}
+
+						.carousel{
+							border: 1px solid white;
+							border-radius:10%;
+						}
+
+						.img-carroussel{
+						border: 1px solid white;
+						border-radius:10%;
+						}
+
+						#header-conteudo{
+							position:absolute;
+							left:60%;
+							top:0px;
+							white-space: nowrap;
+							text-align: center;
+
+
+						}
+
+
+						#header-conteudo, h6{
+							font-size:40px;
+						}
+
+						.topico{
+							position: relative;
+							top:100px;
+							left:20%;
+							min-width:1080px;
+							font-size:20px;
+							margin-bottom: 50px;
+
+
+							background: rgba(27, 152, 224, 0.28);
+							border-radius: 16px;
+							box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+							backdrop-filter: blur(5px);
+							-webkit-backdrop-filter: blur(5px);
+							border: 1px solid rgba(27, 152, 224, 0.3);
+
+
+						}
+
+						footer{
+							position: absolute;
+							top:3500px;
+							left:480px;
+							font-size:14px;
+							text-align: center;
+							width:1400px;
 
 
 						}
