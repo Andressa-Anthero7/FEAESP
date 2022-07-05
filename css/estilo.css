@@ -1547,12 +1547,13 @@
 
 						#nav-bar{
 							position:relative;
-							left:90%;
+							left:70%;
 							top:70px;
 							padding-left:0;
 							z-index:3;
 							min-width:850px;
 							font-size:30px;
+							border:1px solid red;
                           
 						}
 
@@ -1653,7 +1654,7 @@
 							top:20px;
 							left:0;
 							z-index:1;
-							min-width:1550px;
+							min-width:1400px;
 
 						}
 
@@ -1661,8 +1662,8 @@
 
 						#btn-afiliacao{
 							position:absolute;
-							top:400px;
-							left:880px;
+							top:350px;
+							left:800px;
 							background:#1b98e0;
 							color:white;
 							width:200px;
